@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=League+Spartan:wght@700&display=swap');
+@import url(reset.css);
+
+:root{
+    --primary-color-peach: #e7816b;
+    --primary-color-black: #1D1C1E;
+    --primary-color-white: #fff;
+    --secondary-color-light-peach: #FFAD9B;
+    --secondary-color-dark-grey: #333136;
+    --secondary-color-light-grey: #F1F3F5;
+}
+
+body, input{
+    font-family: Jost;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-image: url("../img/background_design/Rectangle_1.svg"), url("../img/background_design/Rectangle_2.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 475px, right 1880px;
+}
+
+.container{
+    max-width: 1110px;
+    
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding-top: 64px;
+    padding-bottom: 67px;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    gap: 18.7px;
+}
+header .logo .logo_icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: conic-gradient(from 90deg at 50% 50%, rgba(231, 129, 107, 0.0001) 0deg, var(--primary-color-peach) 359.74deg, rgba(231, 129, 107, 0.0001) 360deg);
+    transform: matrix(0, -1, -1, 0, 0, 0);
+}
+
+header nav ul{
+    display: flex;
+    gap: 42px;
+}
+header nav ul li{
+    font-weight: 400;
+    font-size: 14px;
+    
+    
+    letter-spacing: 2px;
+}
+header nav ul li a{
+    color: var(--secondary-color-dark-grey);
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+
+main .promo{
+    position: relative;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    color: var(--primary-color-white);
+    
+    background: var(--primary-color-peach);
+    border-radius: 15px;
+    
+    padding: 145px 95px;
+    margin-bottom: 160px;
+}
+
+main .promo .promo_content h1{
+    width: 540px;
+    height: 165px;
+    
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    
+    margin-bottom: 11px;
+}
+main .promo .promo_content p{
+    width: 445px;
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    
+    margin-bottom: 40px;
+}
+main .promo .promo_content form input{
+    font-weight: 500;
+    font-size: 15px;
+    
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+    color: var(--secondary-color-dark-grey);
+    
+    background: var(--primary-color-white);
+    border-radius: 8px;
+    border-style: none;
+    
+    padding: 18px 25px 16px 24px;
+}
+main .promo .promo_content form input:hover{
+    background: var(--secondary-color-light-peach);
+}
+
+main .promo .promo_img{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+main .promo .promo_img img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+main .promo .promo_img .promo_img_bg{
+    width: 640px;
+    height: 640px;
+    
+    border-radius: 100%;
+    background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+    mix-blend-mode: normal;
+    opacity: 0.31;
+    transform: matrix(0, -1, -1, 0, 0, 0);
+}
+
+main .projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    color: var(--primary-color-white);
+    
+    margin-bottom: 160px;
+}
+main .projects .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .projects h3{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+    padding-bottom: 24px;
+}
+main .projects .project{
+    position: relative;
+}
+main .projects .project div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .projects .project a{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+main .projects .project a{
+    color: var(--primary-color-white);
+}
+main .projects .project a span{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+main .projects .web_design{
+    width: 541px;
+    height: 640px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url(../img/Background_img/Web_Design.svg);
+    background-repeat: no-repeat;
+}
+main .projects .app_design{
+    width: 541px;
+    height: 308px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url(../img/Background_img/app_Design.svg);
+    background-repeat: no-repeat;
+}
+main .projects .graphic_design{
+    width: 541px;
+    height: 308px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url(../img/Background_img/graphic_Design.svg);
+    background-repeat: no-repeat;
+}
+main .projects .project:hover::before{
+    position: absolute;
+    content: '';
+    background-color: rgba(231, 129, 107, 0.7);
+    
+    width: 100%;
+    height: 100%;
+}
+
+.about_project{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 160px;
+}
+
+.about_project div{
+    width: 350px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about_project div img{
+    padding-bottom: 48px;
+}
+.about_project div h4{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    
+    letter-spacing: 5px;
+    
+    color: var(--secondary-color-dark-grey);
+    
+    padding-bottom: 32px;
+}
+.about_project div p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    
+    text-align: center;
+    
+    color: var(--secondary-color-dark-grey);
+}
+
+.project_start{
+    position: relative;
+    
+    color: var(--primary-color-white);
+    background: var(--primary-color-peach);
+    border-radius: 15px;
+    
+    margin-bottom: -72px;
+}
+
+.project_start_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-image: url(../img/background_design/Oval_group.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    
+    border-radius: 15px;
+    
+    padding: 72px 96px;
+}
+.project_start .text{
+    width: 460px;
+}
+.project_start .text h3{
+    width: 268px;
+    
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+    
+    padding-bottom: 16px;
+}
+.project_start .text p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.project_start form input{
+    background: var(--primary-color-white);
+    border-radius: 8px;
+    border-style: none;
+    
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+    padding: 17px 19px;
+}
+.project_start form input:hover{
+    background: var(--secondary-color-light-peach)  
+}
+
+footer{
+    background: var(--primary-color-black);
+    background-size: 100%;
+    padding: 144px 165px 72px 165px;
+}
+
+footer header{
+    padding-top: 0;
+    padding-bottom: 40px;
+}
+footer header .logo span{
+    font-weight: 700;
+    font-size: 24px;
+    
+    letter-spacing: 5px;
+}
+footer header span, footer header nav li a{
+    color: white;
+}
+
+footer .line{
+    height: 1px;
+    
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    
+    margin-bottom: 31px;
+}
+
+footer .address{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+footer address{
+    display: flex;
+    gap: 30px;
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    
+    color: var(--primary-color-white);
+}
+footer address div{
+    width: 350px;
+}
+footer address div li{
+    list-style: none;
+}
+footer address div li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .icons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+footer .icons svg path:hover{
+    cursor: pointer;
+    fill: var(--secondary-color-light-peach);
+}
